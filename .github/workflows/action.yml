@@ -3,9 +3,12 @@ name: 'hide test'
 on: [ workflow_dispatch ]
 
 jobs:
-    hide:
-        steps:
-          run: |
+  hide:
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/github-script@v6
+        with:
+          script: |
             const f = require('hide_archived_repositories.js');
             console.log(f());
 
