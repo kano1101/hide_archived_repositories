@@ -1,7 +1,7 @@
-name: hide test
+name: 'hide test'
 
 on: [ workflow_dispatch ]
 
-jobs:
-  steps:
-    - main: '../../../hide_archived_repositories.js'
+runs:
+  using: 'node16'
+  main: '../../../hide_archived_repositories.js'
