@@ -4,4 +4,4 @@ on: [ workflow_dispatch ]
 
 jobs:
   steps:
-    - main: '../../hide_archived_repositories.js'
+    - main: '../../../hide_archived_repositories.js'
