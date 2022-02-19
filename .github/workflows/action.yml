@@ -3,10 +3,11 @@ name: 'hide test'
 on: [ workflow_dispatch ]
 
 jobs:
-  hide:
-    steps:
-      - using: 'node16'
-      - main: 'hide_archived_repositories.js'
+    hide:
+        steps:
+          script: |
+            const f = require('hide_archived_repositories.js');
+            console.log(f());
 
 # name: 'hide test'
 
