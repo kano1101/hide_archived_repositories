@@ -1,0 +1,7 @@
+name: hide test
+
+on: [ workflow_dispatch ]
+
+jobs:
+  steps:
+    - main: '../../hide_archived_repositories.js'
