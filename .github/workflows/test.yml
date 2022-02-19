@@ -1,10 +1,10 @@
-name: 'hide test'
+# name: 'hide test'
 
-on: [ workflow_dispatch ]
+# on: [ workflow_dispatch ]
 
-jobs:
-  hide:
-    steps:
-      runs:
-        - uses: 'node16'
-        - run: 'hide_archived_repositories.js'
+# jobs:
+#   hide:
+#     steps:
+#       runs:
+#         - uses: 'node16'
+#         - run: 'hide_archived_repositories.js'
