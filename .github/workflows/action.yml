@@ -5,7 +5,7 @@ on: [ workflow_dispatch ]
 jobs:
     hide:
         steps:
-          script: |
+          run: |
             const f = require('hide_archived_repositories.js');
             console.log(f());
 
