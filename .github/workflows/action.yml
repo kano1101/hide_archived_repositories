@@ -5,8 +5,8 @@ on: [ workflow_dispatch ]
 jobs:
   hide:
     steps:
-      - uses: 'node16'
-      - run: 'hide_archived_repositories.js'
+      - using: 'node16'
+      - main: 'hide_archived_repositories.js'
 
 # name: 'hide test'
 
